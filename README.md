@@ -37,7 +37,6 @@ Values provided to opacity and alpha are either 0-1.0 | 0%-100%
 ```css
 #00FF00CC
 ```
- last 2 chars represent alpha value
 
 ```css
 rgba(r, g, b, alpha)
