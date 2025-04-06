@@ -34,9 +34,17 @@ Opacity is the measure of how transparent a colour is and can be set by either u
 
 Values provided to opacity and alpha are either 0-1.0 | 0%-100%
 
-```#00FF00CC``` last 2 chars represent alpha value
+```css
+#00FF00CC
+```
+ last 2 chars represent alpha value
 
-```rgba(r, g, b, alpha)``` | ```hsla(h, s, l, alpha)```
+```css
+rgba(r, g, b, alpha)
+```
+```css
+hsla(h, s, l, alpha)
+```
 
 ### linear-gradient
 
@@ -48,11 +56,15 @@ linear-gradient is a css function that takes at least 3 arguments ***gradientDir
 
 ***colour*** can be any of the CSS colour methods.
 
-```linear-gradient(90deg rgb(255, 0, 0) rgb(0, 255, 0))```
+```css
+linear-gradient(90deg rgb(255, 0, 0) rgb(0, 255, 0))
+```
 
 The position where one color ends and another one starts is called ***colour-stop**** these are given as either ***px*** | ***%***
 
-```linear-gradient(180deg rgb(255, 0, 0) 75%)rgb(0, 255, 0))```
+```css
+linear-gradient(180deg rgb(255, 0, 0) 75%)rgb(0, 255, 0))
+```
 
 In the above example the red colour will start at 0 and tack up 75% of its parent element.
 
@@ -60,15 +72,13 @@ In the above example the red colour will start at 0 and tack up 75% of its paren
 
 Use box-shadow to add more depth the colours using the following arguments:
 
-```offsetX``` ```offsetY``` ```blurRadius``` ```spreadRadius``` ```color```
+```offsetX``` | ```offsetY``` | ```blurRadius``` | ```spreadRadius``` | ```color```
 
 offsetX and offsetY default is 0 if no value is given. Values are either ***positive*** X = move shadow ***right*** Y = move shadow ***down*** | ***negative*** X = move shadow ***left*** Y = move shadow ***up***
 
 blurRadius and spreadRadius are optional.
 
 Color can be given as any of the CSS colour methods.
-
->[!example]+ Syntax
 
 ```css
 box-shadow: offsetX offsetY blurRadius spreadRadius color;
